@@ -1,0 +1,30 @@
+{
+    "name": "artbar/mvc",
+    "description": "My test app",
+    "require": {
+        "vonage/client": "^2.4",
+        "vlucas/phpdotenv": "^5.3",
+        "ext-gd": "*",
+        "ext-mbstring": "*"
+    },
+    "scripts": {
+        "permission": [
+            "sudo chmod -R 777 cache"
+        ],
+        "test": [
+            "tests\\WordSplitTest::testSameSplit"
+        ]    },
+    "autoload": {
+        "psr-4": {
+            "\\": "",
+            "Classes\\": "classes",
+            "Tests\\": "tests"
+        },
+        "files": [
+            "vendor/autoload.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
